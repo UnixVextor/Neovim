@@ -50,11 +50,20 @@ return packer.startup(function(use)
   } 
 
   use {
-      'numToStr/Comment.nvim',
+      'numToStr/Comment.nvim', --comment keyword `gcc`  
       config = function()
           require('Comment').setup()
       end
   }
+  use 'navarasu/onedark.nvim'  -- colorscheme
+
+  use {                                       -- lualine plugin show detail about coding
+    'nvim-lualine/lualine.nvim',   
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'} -- bufferline
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
