@@ -5,3 +5,5 @@ require("zetwo.plugin.nvimtree")
 require("zetwo.plugin.colorschme")
 require("zetwo.plugin.lualine")
 require("zetwo.plugin.bufferline")
+require("zetwo.plugin.indentline")
+
